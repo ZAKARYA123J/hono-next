@@ -1,6 +1,5 @@
 import { Hono } from 'hono'
 import { handle } from 'hono/vercel'
-
 export const runtime = 'edge'
 import prisma from '../../../prisma.js';
 const app = new Hono().basePath('/api')
