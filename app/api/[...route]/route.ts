@@ -9,7 +9,7 @@ app.get('/hello', (c) => {
     message: 'Hello from Hono!'
   })
 })
-
+console.log('dvc')
 app.post('/users', async (c) => {
   try {
     const { email, password, name } = await c.req.json();
